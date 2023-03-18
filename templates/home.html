@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Credit Risk Prediction </title>
+</head>
+<body>
+    <div class="login">
+        <h1>End-to-End Data Science Project- Credit Risk ML Model</h1>
+
+        <form action="{{ url_for('predict') }}"method="POST">
+
+            <label for="Marital_status"> Select a marital status:</label><br>
+            <select id="Marital_status" name="Marital_status">
+                <option value="2" selected >Single</option>
+                <option value="1">Separated</option>
+                <option value="0">Married</option>
+            </select><br><br>
+
+
+            <label for="Gender">Select a gender:</label><br>
+            <select id="Gender" name="Gender">
+                <option value="1">Male</option>
+                <option value="0" selected>Female</option>
+            </select><br><br>
+
+            <label for="Number_of_dependents"> Enter number of dependents:</label><br>
+            <input type="number" id="Number_of_dependents" name="Number_of_dependents" value="0"><br><br>
+
+            <label for="Housing"> Select a housing Type:</label><br>
+            <select id="Housing" name="Housing">
+                <option value="0">Free</option>
+                <option value="1" selected>Own</option>
+                <option value="2">Rent</option>
+            </select><br><br>
+
+            <label for="Years_at_current_residence"> Enter number of years at current residence:</label><br>
+            <input type="number" id="Years_at_current_residence" name="Years_at_current_residence" value="0"><br><br>
+
+            <label for="Employment_status"> Select a employment status:</label><br>
+            <select id="Employment_status" name="Employment_status">
+                <option value="0" selected>Employee</option>
+                <option value="3" >Unskilled - resident</option>
+                <option value="1">Qualified employee</option>
+                <option value="2">Unemployed</option>
+            </select><br><br>
+
+            <label for="Foreign_worker"> Is foreign worker :</label><br>
+            <select id="Foreign_worker" name="Foreign_worker">
+                <option value="1" selected>Yes</option>
+                <option value="0" >No</option>
+            </select><br><br>
+
+            <label for="Savings_account_balance"> Select a savings account balance:</label><br>
+            <select  id="Savings_account_balance" name="Savings_account_balance">
+                <option value="1" selected>Low</option>
+                <option value="0" >High</option>
+                <option value="3">Very High</option>
+                <option value="2">Medium</option>
+            </select><br><br>
+
+            <label for="Has_been_employed_for_at_least"> Enter number of years applicant has been employed for at least :</label><br>
+            <input type="number" id="Has_been_employed_for_at_least" name="Has_been_employed_for_at_least" value="0"><br><br>
+
+            <label for="Purpose"> Select a purpose:</label><br>
+            <select id="Purpose" name="Purpose">
+                <option value="5" selected>Electronic equipment</option>
+                <option value="6" >New vehicle</option>
+                <option value="0">FF&E</option>
+                <option value="8">Used vehicle</option>
+                <option value="1 " >Business</option>
+                <option value="4">Education</option>
+                <option value="7">Repair costs</option>
+                <option value="3">Domestic appliances</option>
+                <option value="2">Career development</option>
+            </select><br><br>
+
+            <label for="EMI_rate_in_percentage_of_disposable_income"> Enter EMI rate in percentage of disposable income :</label><br>
+            <input type="number" id="EMI_rate_in_percentage_of_disposable_income" name="EMI_rate_in_percentage_of_disposable_income" value="0"><br><br>
+
+            <label for="Property"> Select a Property:</label><br>
+            <select id="Property" name="Property">
+                <option value="1" selected>Car or Other</option>
+                <option value="2" >Real estate</option>
+                <option value="0">Building society savings agreement/life insurance </option>
+            </select><br><br>
+
+            <label for="Has_coapplicant"> Has coapplicant :</label><br>
+            <select id="Has_coapplicant" name="Has_coapplicant">
+                <option value="1" selected>Yes</option>
+                <option value="0" >No</option>
+            </select><br><br>
+
+            <label for="Has_guarantor"> Has guarantor :</label><br>
+            <select id="Has_guarantor" name="Has_guarantor">
+                <option value="1" >Yes</option>
+                <option value="0" selected>No</option>
+            </select><br><br>
+
+            <label for="Number_of_existing_loans_at_this_bank"> Enter number of existing loans at this bank :</label><br>
+            <input type="number" id="Number_of_existing_loans_at_this_bank" name="Number_of_existing_loans_at_this_bank" value="0"><br><br>
+
+            <label for="Loan_history"> Select a loan history:</label><br>
+            <select id="Loan_history" name="Loan_history">
+                <option value="1" selected>Critical/pending loans at other banks</option>
+                <option value="3">Existing loans paid back duly till now</option>
+                <option value="2">Delay in paying off loans in the past</option>
+                <option value="4">No loans taken/all loans paid back duly</option>
+                <option value="0">All loans at this bank paid back duly</option>
+            </select><br><br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
