@@ -1,5 +1,5 @@
 ### Software
-
+0. [Anaconda](https://www.anaconda.com/download)
 1. [Github Accoount](https://github.com)
 2. [Pycham IDE](https://www.jetbrains.com/pycharm/)
 3. [GitCLI](https://git-scm.com/docs/gitcli)
